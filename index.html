@@ -5,61 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulación Barra de Navegación</title>
     <style>
-        /* Estilos para la barra superior */
-        .top-bar {
-            background-color: #000;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            letter-spacing: 1px;
-        }
+/* Estilos usados */
 
-        /* Logo y sección de navegación */
-        .logo {
-            color: #000; /* Amarillo de National Geographic */
-            font-weight: bold;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
+    /* Estilos utilizados en el inicio */
+        /* Barra superior */
+            .top-bar {
+                background-color: #000;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+
+        /* Logo */
+            .logo {
+                color: #000; 
+                font-weight: bold;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                font-family: Arial, sans-serif;
+            }
         /* Tamaño de la imagen de nat gep*/
-        .logo img {
-                width: 80px;
-                margin-right: 5px;
-        }
-       
+            .logo img {
+                    width: 80px;
+                    margin-right: 5px;
+            }
+    
+     /* Estilos utilizados en el footer */
 
+        /* Titulo de Redes sociales */
+            .Redes {
+                background-color: #000;
+                color: #fff;
+                padding: 1px;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
+            .Linkredes {
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                gap: 5px; 
+            }
+
+            .Linkredes img {
+                width: 60px; 
+                height: auto;
+            }
+        /* Titulo de Frase de derechos reservados */
+        .Reservados {
+                color: #000;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
     </style>
 </head>
+
 <body>
 
-    <!-- Barra superior -->
-    <header class="top-bar">
-        REVISTA NAT GEO &nbsp;&nbsp; PROGRAMACIÓN TV
-    </header>
+<!-- Semántica -->
 
-    <!-- Contenedor de navegación -->
-    <nav class="nav-container">
-        
-        <!-- Logo -->
-        <div class="logo">
-            <img src="https://www.pngitem.com/pimgs/m/329-3297887_national-geographic-yellow-logo-hd-png-download.png" alt="Logo" />
-            CIENCIA
-        
-        </div>
-    </nav>
+    <!-- Sección superior -->
+        <!-- Barra superior -->
+            <header class="top-bar">
+                REVISTA NAT GEO &nbsp;&nbsp; PROGRAMACIÓN TV
+            </header>
+
+        <!-- Contenedor de navegación -->
+            <header class="nav-container">
+                
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="https://www.pngitem.com/pimgs/m/329-3297887_national-geographic-yellow-logo-hd-png-download.png" alt="Logo" />
+                    CIENCIA
+                
+                </div>
+            </header>
    
+    <!-- Sección del cuerpo -->
    
     <!-- Pie de página -->
-    <footer="marca">
-        <p>
+    <footer="Pies de pagina">
+        <div class="Redes">
+            <H3>Redes sociales</H3>
+        </div>
+
+        <div class="Linkredes">
+            <ul>
+                <li><a href="https://www.instagram.com/natgeo/"target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" alt="Instagram" ></a></li>
+                <li><a href="https://www.facebook.com/natgeo" target="_blank"><img src="https://w7.pngwing.com/pngs/770/684/png-transparent-facebook-logo-facebook-computer-icons-logo-social-media-circular-black-and-white-social-networking-service-social-network-thumbnail.png" alt="facebook"></a></li>
+                <li><a href="https://www.youtube.com/@NationalGeographicEspanol"target="_blank"><img src="https://icones.pro/wp-content/uploads/2021/02/youtube-logo-icone-noir.png" alt="Youtube""></a></li>
+            </ul>
+        </div>
+        
+        <div class="Reservados">
             &copy;2024 Julia Huchín & National Geographic. 
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/RegisteredTM.svg/640px-RegisteredTM.svg.png" alt="marca resgistrada" width="12"/>
             Todos los derechos reservados
-        </p>
+        </div>
     </footer>
 </body>
 </html>
